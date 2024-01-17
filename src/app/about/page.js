@@ -1,9 +1,12 @@
 import Header from '@/components/shared/Header/Header'
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
     <>
       <Header />
     </>
   )
 }
+
+export default page

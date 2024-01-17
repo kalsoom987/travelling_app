@@ -1,0 +1,51 @@
+'use client'
+
+import React, { useState } from 'react'
+import TopBar from './TopBar'
+import Container from '../Reuseables/Container'
+import { navbarRoutes } from '@/utils/navbarRoutes'
+import { FaBars } from 'react-icons/fa'
+import { usePathname } from 'next/navigation'
+import { useRouter } from 'next/navigation'
+import Sidebar from './Sidebar'
+
+const Header = () => {
+  const pathname = usePathname()
+  const router = useRouter()
+  const [showSidebar, setShowSideBar] = useState(false)
+
+  return (
+    <>
+      <TopBar />
+      <div className='bg-[#2f2f2f] h-[60px] md:h-[85px] flex items-center justify-center'>
+        <Container>
+          <div className='flex justify-between items-center w-full'>
+            <div className='w-1/2'>
+              <p className='text-white font-bold text-[24px] md:text-[32px]'>Logo Here</p>
+            </div>
+            <div className='w-1/2 flex justify-end items-center gap-10'>
+              <ul className='hidden md:flex items-center gap-6'>
+                {navbarRoutes.map((x, i) => (
+                  <li
+                    onClick={() => router.push(x.path)}
+                    className={`cursor-pointer font-semibold hover:text-[#468ae7] transition-all duration-300 ${
+                      x.path === pathname ? 'text-[#468ae7]' : 'text-white'
+                    }`}
+                    key={i}>
+                    {x.name}
+                  </li>
+                ))}
+              </ul>
+              <div className='w-8 h-8 md:hidden flex justify-center items-center border-[1px] border-white rounded-[4px]'>
+                <FaBars color='#ffffff' size={20} onClick={() => setShowSideBar(true)} />
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+      <Sidebar show={showSidebar} setShow={setShowSideBar} />
+    </>
+  )
+}
+
+export default Header
