@@ -5,7 +5,7 @@ import Container from '../Reuseables/Container'
 
 const TopBar = () => {
   return (
-    <div className='bg-black h-[40px] md:h-[60px] flex items-center justify-center'>
+    <div className='bg-[rgba(0,0,0,0.7)] h-[40px] md:h-[60px] flex items-center justify-center'>
       <Container>
         <div className='flex justify-between items-center w-full'>
           <div className='hidden md:flex justify-start items-center gap-10'>

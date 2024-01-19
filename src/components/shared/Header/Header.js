@@ -16,9 +16,9 @@ const Header = () => {
   const [showSidebar, setShowSideBar] = useState(false)
 
   return (
-    <>
+    <div className='fixed top-0 z-[10] w-full'>
       <TopBar />
-      <div className='bg-[#2f2f2f] h-[60px] md:h-[85px] flex items-center justify-center'>
+      <div className='bg-[rgba(47,47,47,0.7)] h-[60px] md:h-[85px] flex items-center justify-center'>
         <Container>
           <div className='flex justify-between items-center w-full'>
             <div className='w-1/2'>
@@ -48,7 +48,7 @@ const Header = () => {
         </Container>
       </div>
       <Sidebar show={showSidebar} setShow={setShowSideBar} />
-    </>
+    </div>
   )
 }
 
