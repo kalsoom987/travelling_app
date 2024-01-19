@@ -7,10 +7,8 @@ import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectFade, Autoplay, Navigation, A11y } from 'swiper/modules'
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
 const Banner = () => {
-  const [show, setShow] = useState(false)
   return (
     <div className='relative'>
       <Swiper
