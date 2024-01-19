@@ -8,7 +8,7 @@ const Forgot = () => {
     <div className='w-full flex justify-center items-center py-16'>
       <Container>
         <div className='flex flex-col items-center w-full'>
-          <p className='text-center text-black pb-2 text-3xl font-semibold '>Forgot Password</p>
+          <p className='text-center text-black pb-2 text-3xl font-semibold'>Forgot Password</p>
           <p className='pb-8 text-sm text-center'>Enter your email here and then OTP will send to your email</p>
           <form className='grid grid-cols-1  pt-8 pb-3 gap-5 w-full md:w-[400px]  '>
             <Input
