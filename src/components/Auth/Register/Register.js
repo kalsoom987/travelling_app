@@ -3,10 +3,10 @@
 import React, { useState } from 'react'
 import Container from '../../shared/Reuseables/Container'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-import StepOneForm from './StepOneForm'
 import StepTwoForm from './StepTwoForm'
-import Finish from './Finish'
 import Link from 'next/link'
+import StepOneForm from './StepOneForm'
+import Finish from './Finish'
 
 const Register = () => {
   const [step, setStep] = useState(1)
