@@ -26,7 +26,7 @@ const Banner = () => {
         <SwiperSlide>
           <div className='w-full overflow-hidden '>
             <Image
-              src='/assets/images/banner2.jpg'
+              src='/assets/images/banner4.jpg'
               alt='slide1'
               className='object-cover md:h-[700px] w-full'
               height={700}
@@ -37,7 +37,7 @@ const Banner = () => {
         <SwiperSlide>
           <div className='w-full overflow-hidden '>
             <Image
-              src='/assets/images/banner3.jpg'
+              src='/assets/images/banner2.jpg'
               alt='slide2'
               className='object-cover md:h-[700px] w-full'
               height={700}
