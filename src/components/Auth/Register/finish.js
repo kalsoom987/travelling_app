@@ -17,4 +17,4 @@ const Finish = () => {
   )
 }
 
-export default Finish
+export default Finish

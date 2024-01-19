@@ -33,7 +33,7 @@ const Login = () => {
               toggleIcon={togglePass ? <IoEyeOffOutline /> : <IoEyeOutline />}
               handleToggle={() => setTogglePass((prev) => !prev)}
             />
-                      <button className='bg-[#6553F7] py-3 text-white mt-4'>Login</button>
+            <button className='bg-[#6553F7] py-3 text-white mt-4'>Login</button>
           </form>
           <p>
             Do not have an account?{' '}
@@ -47,4 +47,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Login

@@ -31,23 +31,23 @@ const Reset = () => {
               error={null}
               toggleIcon={togglePass ? <IoEyeOffOutline /> : <IoEyeOutline />}
               handleToggle={() => setTogglePass((prev) => !prev)}
-              />
-              <Input
-                label='Confirm Password'
-                labelStyle='text-sm font-semibold text-[#333333]'
-                inputType={togglePass ? 'text' : 'password'}
-                inputStyle='w-full focus:outline-none text-sm text-gray-400 border-[1px] border-gray-300 px-3 md:px-4 py-3'
-                placeholder='Confirm your password'
-                error={null}
-                toggleIcon={togglePass ? <IoEyeOffOutline /> : <IoEyeOutline />}
-                handleToggle={() => setTogglePass((prev) => !prev)}
-              />
-              <button className='bg-[#6553F7] py-3 text-white mt-4'>Reset Password</button>
-            </form>
-          </div>
-        </Container>
-      </div>
-    )
-  }
-  
-  export default Reset
+            />
+            <Input
+              label='Confirm Password'
+              labelStyle='text-sm font-semibold text-[#333333]'
+              inputType={togglePass ? 'text' : 'password'}
+              inputStyle='w-full focus:outline-none text-sm text-gray-400 border-[1px] border-gray-300 px-3 md:px-4 py-3'
+              placeholder='Confirm your password'
+              error={null}
+              toggleIcon={togglePass ? <IoEyeOffOutline /> : <IoEyeOutline />}
+              handleToggle={() => setTogglePass((prev) => !prev)}
+            />
+            <button className='bg-[#6553F7] py-3 text-white mt-4'>Reset Password</button>
+          </form>
+        </div>
+      </Container>
+    </div>
+  )
+}
+
+export default Reset
