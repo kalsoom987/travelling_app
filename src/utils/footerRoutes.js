@@ -1,22 +1,22 @@
 import { FaLocationArrow, FaPhoneAlt, FaRegEnvelope } from 'react-icons/fa'
 
 export const myAccount = [
-  {
+{
     name: 'My Account',
-    path: '/account',
-  },
-  {
+path: '/account',
+},
+{
     name: 'Order History',
-    path: '/order-history',
-  },
-  {
+path: '/order-history',
+},
+{
     name: 'Wishlist',
-    path: '/wishlist',
-  },
-  {
+path: '/wishlist',
+},
+{
     name: 'Chat',
-    path: '/chat',
-  },
+path: '/chat',
+},
 ]
 
 export const Information = [
@@ -41,7 +41,7 @@ export const Information = [
 export const storeInformation = [
   {
     icon: <FaLocationArrow />,
-    text: 'Al-Manama, Bahrain',
+    text: 'Punjab, Pakistan',
   },
   {
     icon: <FaRegEnvelope />,

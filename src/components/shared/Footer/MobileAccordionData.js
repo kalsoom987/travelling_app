@@ -7,9 +7,9 @@ const StoreInformation = () => {
       {storeInformation.map((x, i) => {
         return (
           <li
-            className='text-[#333333] flex items-center justify-start gap-2 text-sm cursor-pointer hover:text-[#6453f7] transition-all duration-300'
+            className='text-white flex items-center justify-start gap-2 text-sm cursor-pointer hover:text-[#6453f7] transition-all duration-300'
             key={i}>
-            <span>{x.icon}</span> <span>{x.text}</span>
+           <span>{x.icon}</span> <span>{x.text}</span>
           </li>
         )
       })}
@@ -23,7 +23,7 @@ const WebsiteInformation = () => {
       {Information.map((x, i) => {
         return (
           <li
-            className='text-[#333333] text-sm cursor-pointer hover:text-[#468ae7] transition-all duration-300'
+            className='text-white text-sm cursor-pointer hover:text-[#468ae7] transition-all duration-300'
             key={i}>
             {x.name}
           </li>
@@ -39,7 +39,7 @@ const AccountInformation = () => {
       {myAccount.map((x, i) => {
         return (
           <li
-            className='text-[#333333] text-sm cursor-pointer hover:text-[#468ae7] transition-all duration-300'
+            className='text-white text-sm cursor-pointer hover:text-[#468ae7] transition-all duration-300'
             key={i}>
             {x.name}
           </li>
