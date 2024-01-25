@@ -23,7 +23,7 @@ const WebsiteInformation = () => {
       {Information.map((x, i) => {
         return (
           <li
-            className='text-[#333333] text-sm cursor-pointer hover:text-[#6453f7] transition-all duration-300'
+            className='text-[#333333] text-sm cursor-pointer hover:text-[#468ae7] transition-all duration-300'
             key={i}>
             {x.name}
           </li>
@@ -39,7 +39,7 @@ const AccountInformation = () => {
       {myAccount.map((x, i) => {
         return (
           <li
-            className='text-[#333333] text-sm cursor-pointer hover:text-[#6453f7] transition-all duration-300'
+            className='text-[#333333] text-sm cursor-pointer hover:text-[#468ae7] transition-all duration-300'
             key={i}>
             {x.name}
           </li>

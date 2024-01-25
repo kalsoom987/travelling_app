@@ -25,11 +25,11 @@ const MoveToTop = () => {
 
   return (
     <div
-      className={`fixed bottom-5 sm:bottom-[40px] transition-all duration-200 right-5 sm:right-[40px] w-10 h-10 flex justify-center items-center rounded-full shadow-md cursor-pointer bg-[#7669ee] ${
+      className={`fixed bottom-5 sm:bottom-[40px] transition-all duration-200 right-5 sm:right-[40px] w-10 h-10 flex justify-center items-center rounded-full shadow-md cursor-pointer bg-white ${
         show ? 'scale-100' : 'scale-0'
       }`}
       onClick={scrollToTop}>
-      <FaArrowUp color='#ffffff' size={22} />
+      <FaArrowUp color='#468ae7' size={22} />
     </div>
   )
 }
