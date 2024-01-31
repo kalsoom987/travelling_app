@@ -3,8 +3,10 @@
 import React, { useState } from 'react'
 import { LuMapPin } from 'react-icons/lu'
 import Container from '../shared/Reuseables/Container'
+import { useRouter } from 'next/navigation'
 
 function SearchTour() {
+  const router = useRouter()
   const [show, setShow] = useState('')
   return (
     <>
@@ -35,7 +37,11 @@ function SearchTour() {
               <p className='text-white font-semibold flex items-center gap-3'>
                 <LuMapPin /> <span>Kumrat Valley</span>
               </p>
-              <p className='text-[#4296EE] text-xs font-semibold uppercase'>View All Tours</p>
+              <p
+                className='text-[#4296EE] text-xs font-semibold uppercase cursor-pointer'
+                onClick={() => router.push('/tour-list')}>
+                View All Tours
+              </p>
             </div>
             <div className='bg-black opacity-0 hover:opacity-[0.6] duration-300 transition-all absolute top-0 h-[300px] md:h-[380px] lg:h-[450px] w-full'></div>
             <div
@@ -55,7 +61,11 @@ function SearchTour() {
               <p className='text-white font-semibold flex items-center gap-3'>
                 <LuMapPin /> <span>Kalam Valley</span>
               </p>
-              <p className='text-[#4296EE] text-xs font-semibold uppercase'>View All Tours</p>
+              <p
+                className='text-[#4296EE] text-xs font-semibold uppercase cursor-pointer'
+                onClick={() => router.push('/tour-list')}>
+                View All Tours
+              </p>
             </div>
             <div className='bg-black opacity-0 hover:opacity-[0.6] duration-300 transition-all absolute top-0 h-[300px] md:h-[380px] lg:h-[450px] w-full'></div>
             <div
@@ -74,7 +84,11 @@ function SearchTour() {
               <p className='text-white font-semibold flex items-center gap-3'>
                 <LuMapPin /> <span>Hunza Valley</span>
               </p>
-              <p className='text-[#4296EE] text-xs font-semibold uppercase'>View All Tours</p>
+              <p
+                className='text-[#4296EE] text-xs font-semibold uppercase cursor-pointer'
+                onClick={() => router.push('/tour-list')}>
+                View All Tours
+              </p>
             </div>
             <div className='bg-black opacity-0 hover:opacity-[0.6] duration-300 transition-all absolute top-0 h-[300px] md:h-[380px] lg:h-[450px] w-full'></div>
             <div
@@ -93,7 +107,11 @@ function SearchTour() {
               <p className='text-white font-semibold flex items-center gap-3'>
                 <LuMapPin /> <span>Islamabad City</span>
               </p>
-              <p className='text-[#4296EE] text-xs font-semibold uppercase'>View All Tours</p>
+              <p
+                className='text-[#4296EE] text-xs font-semibold uppercase cursor-pointer'
+                onClick={() => router.push('/tour-list')}>
+                View All Tours
+              </p>
             </div>
             <div className='bg-black opacity-0 hover:opacity-[0.6] duration-300 transition-all absolute top-0 h-[300px] md:h-[380px] lg:h-[450px] w-full'></div>
             <div
@@ -113,7 +131,11 @@ function SearchTour() {
               <p className='text-white font-semibold flex items-center gap-3'>
                 <LuMapPin /> <span>Kaghan & Naran Valley</span>
               </p>
-              <p className='text-[#4296EE] text-xs font-semibold uppercase'>View All Tours</p>
+              <p
+                className='text-[#4296EE] text-xs font-semibold uppercase cursor-pointer'
+                onClick={() => router.push('/tour-list')}>
+                View All Tours
+              </p>
             </div>
             <div className='bg-black opacity-0 hover:opacity-[0.6] duration-300 transition-all absolute top-0 h-[300px] md:h-[380px] lg:h-[450px] w-full'></div>
             <div
