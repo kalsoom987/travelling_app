@@ -30,11 +30,11 @@ const Header = () => {
   }, [])
 
   return (
-    <div className={`${pathname === '/' ? 'absolute' : 'relative'} top-0 z-[10] w-full`}>
+    <div className={`${pathname === '/' || pathname === '/tour-list' ? 'absolute' : 'relative'} top-0 z-[10] w-full`}>
       <TopBar pathname={pathname} />
       <div
         className={`${
-          pathname === '/' ? 'bg-[rgba(47,47,47,0.7)]' : 'bg-[rgb(47,47,47)]'
+          pathname === '/' || pathname === '/tour-list' ? 'bg-[rgba(47,47,47,0.7)]' : 'bg-[rgb(47,47,47)]'
         } h-[60px] md:h-[85px] flex items-center justify-center`}>
         <Container>
           <div className='flex justify-between items-center w-full'>

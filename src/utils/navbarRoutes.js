@@ -4,7 +4,7 @@ export const navbarRoutes = [
     path: '/',
   },
   {
-    name: 'About',
-    path: '/about',
+    name: 'Tour List',
+    path: '/tour-list',
   },
 ]

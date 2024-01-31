@@ -10,7 +10,7 @@ const TopBar = ({ pathname }) => {
   return (
     <div
       className={`${
-        pathname === '/' ? 'bg-[rgba(0,0,0,0.7)]' : 'bg-black'
+        pathname === '/' || pathname === '/tour-list' ? 'bg-[rgba(0,0,0,0.7)]' : 'bg-black'
       } h-[40px] md:h-[60px] flex items-center justify-center`}>
       <Container>
         <div className='flex justify-between items-center w-full'>
