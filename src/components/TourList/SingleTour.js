@@ -2,8 +2,10 @@ import Image from 'next/image'
 import React from 'react'
 import { LuClock3 } from 'react-icons/lu'
 import { FaCalendarAlt } from 'react-icons/fa'
+import { useRouter } from 'next/navigation'
 
 const SingleTour = ({ item }) => {
+  const router = useRouter()
   return (
     <div className='flex flex-col md:flex-row justify-between z-[1] items-center w-full gap-3 bg-white'>
       <div className='w-full md:w-[25%] relative'>
@@ -40,7 +42,9 @@ const SingleTour = ({ item }) => {
               <p className='text-xl text-[#333333] font-semibold'>Rs {item.price}</p>
               <p className='text-sm text-[#8c8c8c]'>Per Person</p>
             </div>
-            <button className='h-[45px] flex justify-center items-center bg-[#468ae7] text-xs text-white font-semibold md:w-[110px] w-full'>
+            <button
+              onClick={() => router.push('/tour-list/' + item.id)}
+              className='h-[45px] flex justify-center items-center bg-[#468ae7] text-xs text-white font-semibold md:w-[110px] w-full'>
               View Details
             </button>
           </div>
