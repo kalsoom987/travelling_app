@@ -19,7 +19,7 @@ const FinishComp = () => {
       </p>
       <button
         onClick={() => router.push("/auth/login")}
-        className="flex items-center  rounded-md px-10 py-2 mt-5 mb-10 justify-center text-white gap-2 duration-300 transition-all bg-[#6553F7] "
+        className="flex items-center  rounded-md px-10 py-2 mt-5 mb-10 justify-center text-white gap-2 duration-300 transition-all bg-[#468AE7] "
       >
         Login
       </button>

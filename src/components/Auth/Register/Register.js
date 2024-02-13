@@ -43,35 +43,35 @@ const Register = () => {
           {step < 3 && (
             <p className="pb-8">
               Already have an account?{" "}
-              <Link className="text-[#6553F7] font-semibold" href="/auth/login">
+              <Link className="text-[#468AE7] font-semibold" href="/auth/login">
                 Log in
               </Link>
             </p>
           )}
           <div className="flex w-full items-center justify-center">
-            <p className="w-10 h-10 bg-[#6553F7] text-white flex justify-center items-center font-semibold rounded-full">
+            <p className="w-10 h-10 bg-[#468AE7] text-white flex justify-center items-center font-semibold rounded-full">
               1
             </p>
             <div
               className={`w-[100px] h-[2px] ${
-                step > 1 ? "bg-[#6553F7]" : "bg-[#d9d9d9]"
+                step > 1 ? "bg-[#468AE7]" : "bg-[#d9d9d9]"
               } duration-300 transition-all`}
             ></div>
             <p
               className={`w-10 h-10 ${
-                step > 1 ? "bg-[#6553F7]" : "bg-[#d9d9d9]"
+                step > 1 ? "bg-[#468AE7]" : "bg-[#d9d9d9]"
               } duration-300 transition-all  text-white flex justify-center items-center font-semibold rounded-full`}
             >
               2
             </p>
             <div
               className={`w-[100px] h-[2px] ${
-                step > 2 ? "bg-[#6553F7]" : "bg-[#d9d9d9]"
+                step > 2 ? "bg-[#468AE7]" : "bg-[#d9d9d9]"
               } duration-300 transition-all`}
             ></div>
             <p
               className={`w-10 h-10 ${
-                step > 2 ? "bg-[#6553F7]" : "bg-[#d9d9d9]"
+                step > 2 ? "bg-[#468AE7]" : "bg-[#d9d9d9]"
               } text-white flex justify-center items-center font-semibold rounded-full duration-300 transition-all`}
             >
               3
@@ -97,7 +97,7 @@ const Register = () => {
                 onClick={() => handleStep("dec")}
                 className={` ${
                   step > 1
-                    ? "opacity-1 hover:bg-[#6553F7] hover:text-white"
+                    ? "opacity-1 hover:bg-[#468AE7] hover:text-white"
                     : "opacity-[0.3] cursor-not-allowed"
                 } flex items-center  rounded-md px-4 py-2 justify-center text-[#333333] gap-2 duration-300 transition-all `}
               >
@@ -105,7 +105,7 @@ const Register = () => {
               </button>
               <button
                 onClick={() => handleStep("inc")}
-                className="flex items-center  rounded-md px-4 py-2 justify-center text-[#6553F7] gap-2 duration-300 transition-all hover:bg-[#6553F7] hover:text-white"
+                className="flex items-center  rounded-md px-4 py-2 justify-center text-[#468AE7] gap-2 duration-300 transition-all hover:bg-[#468AE7] hover:text-white"
               >
                 Continue <FaChevronRight />
               </button>
