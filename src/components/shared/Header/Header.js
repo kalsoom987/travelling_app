@@ -31,6 +31,7 @@ const Header = () => {
 
   return (
     <div className={`${pathname === '/' || pathname === '/tour-list' ? 'absolute' : 'relative'} top-0 z-[10] w-full`}>
+      
       <TopBar pathname={pathname} />
       <div
         className={`${
