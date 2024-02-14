@@ -4,6 +4,10 @@ export const navbarRoutes = [
     path: "/",
   },
   {
+    name: "About",
+    path: "/about",
+  },
+  {
     name: "Tour List",
     path: "/tour-list",
   },
@@ -12,7 +16,7 @@ export const navbarRoutes = [
     path: "/admin",
   },
   {
-    name:"About",
-    path:"/about",
-  }
+    name: "Contact",
+    path: "/contact",
+  },
 ];
