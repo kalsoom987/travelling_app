@@ -11,4 +11,8 @@ export const navbarRoutes = [
     name: "Admin",
     path: "/admin",
   },
+  {
+    name:"About",
+    path:"/about",
+  }
 ];
